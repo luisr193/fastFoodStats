@@ -1,0 +1,69 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# fastFoodStats in R
+
+The goal of fastFoodStats is to provide simple tools for analyzing and comparing nutrition data from popular fast food restaurants. It allows users to explore calories, protein, sugar, fat, and sodium from different menu items and restaurants.
+
+## Features
+
+- Compare fast food restaurants
+- Find healthiest and least healthy options
+- Analyze nutrition trends
+- Visualize calorie differences
+
+
+## Installation
+
+You can install the development version of fastFoodStats like so:
+
+```r
+# install.packages("devtools")
+devtools::install_github("luisr193/fastFoodStats")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(fastFoodStats)
+
+# view dataset
+fastfood
+
+# find highest calorie item
+highest_calories(fastfood)
+
+# find lowest sugar item
+lowest_sugar(fastfood)
+
+# compare restaurants
+compare_restaurants(fastfood)
+
+# summary statistics
+restaurant_summary(fastfood)
+
+
+```
+
+## Visualization
+
+```{r plot-example}
+plot_calories(fastfood)
+
+```
+
+```{r summary}
+summary(fastfood)
+```
