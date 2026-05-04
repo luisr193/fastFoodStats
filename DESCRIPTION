@@ -1,0 +1,16 @@
+Package: fastFoodStats
+Title: Fast Food Nutrition Analysis Tools
+Version: 0.1.0
+Authors@R: 
+    person("Luis", "Rivera", email = "lriveralozano@usf.edu", role = c("aut", "cre"))
+Description: A simple R package for analyzing and comparing nutrition data from popular fast food restaurants. It allows users to explore calories, protein, sugar, fat, and sodium across different menu items.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Imports:
+    ggplot2, stats
+    
